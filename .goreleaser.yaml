@@ -1,0 +1,60 @@
+before:
+  hooks:
+    - go mod tidy
+    - go generate ./...
+builds:
+  - env:
+      - CGO_ENABLED=0
+    ldflags:
+      - -X github.com/PauSabatesC/congo/cmd.versionTag={{ .Tag }}
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm
+      - arm64
+archives:
+  - replacements:
+      darwin: Darwin
+      linux: Linux
+      windows: Windows
+      amd64: x86_64
+    format_overrides:
+      - goos: windows
+        format: zip
+checksum:
+  name_template: 'checksums.txt'
+snapshot:
+  name_template: "{{ .Tag }}"
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
+brews:
+  - # GitHub/GitLab repository to push the formula to
+    tap:
+      owner: PauSabatesC
+      name: congo
+
+    name: congo
+    # Template for the url which is determined by the given Token (github or gitlab)
+    # Default for github is "https://github.com/<repo_owner>/<repo_name>/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+    url_template: "https://github.com/PauSabatesC/congo/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+
+    homepage: https://github.com/PauSabatesC/congo
+
+    # Git author used to commit to the repository.
+    commit_author:
+      name: goreleaserbot
+      email: bot@goreleaser.com
+
+    folder: Formula
+
+    description: "Easy and unified way to connect from your terminal to AWS EC2 and ECS"
+
+    # SPDX identifier of your app's license.
+    license: "Apache 2.0 license"
