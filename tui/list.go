@@ -88,6 +88,11 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			m.quitting = true
 			return m, tea.Quit
 
+		case "esc":
+			Exited = true
+			m.quitting = true
+			return m, tea.Quit
+
 		case "enter":
 			i, ok := m.list.SelectedItem().(item)
 			if ok {
