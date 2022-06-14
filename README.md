@@ -30,6 +30,13 @@
 <img src="https://github.com/PauSabatesC/congo/blob/main/cli-filter-thousand-example.png" alt="congo cli thousand" width="600"/>
 </p>
 
+<br>
+
+<p align="center" >
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/PauSabatesC/congo">
+  <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/PauSabatesC/congo">
+  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/PauSabatesC/congo">
+</p>
 
 
 --- 
