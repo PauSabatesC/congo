@@ -33,6 +33,7 @@
 <br>
 
 <p align="center" >
+  <img alt="Go report card" src="https://goreportcard.com/badge/github.com/PauSabatesC/congo">
   <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/PauSabatesC/congo">
   <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/PauSabatesC/congo">
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/PauSabatesC/congo">
