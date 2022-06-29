@@ -78,6 +78,11 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	case tea.KeyMsg:
 		switch keypress := msg.String(); keypress {
+		case "ctrl+c":
+			Exited = true
+			m.quitting = true
+			return m, tea.Quit
+
 		case "q":
 			Exited = true
 			m.quitting = true
