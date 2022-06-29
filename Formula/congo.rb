@@ -5,21 +5,21 @@
 class Congo < Formula
   desc "Easy and unified way to connect from your terminal to AWS EC2 and ECS"
   homepage "https://github.com/PauSabatesC/congo"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache 2.0 license"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.2/congo_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "8a9b1584047ba1a0e609f8529b1711a40298e3544560dbf9ed98654c69fced0f"
+      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.3/congo_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "147d4d722c33b68c63c702ae9e53e662df2a206695c0ec7ab5c5ca9d482ef7c1"
 
       def install
         bin.install "congo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.2/congo_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "2c600f6902de8fe2388bdb7e262691b3af890fb866db8a5f28efe703f28e889b"
+      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.3/congo_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "38e72fc86edc0a6b3765455b670e20333d0eb8d85c38f527764ecaa8483af23e"
 
       def install
         bin.install "congo"
@@ -29,24 +29,24 @@ class Congo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.2/congo_0.1.2_Linux_armv6.tar.gz"
-      sha256 "64829ffd036b283243bb5896de428b426b6bbb337833892f2bf3680a45b335be"
+      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.3/congo_0.1.3_Linux_armv6.tar.gz"
+      sha256 "42a4d54d12e6d32f13edd0b4bdb57cf1ab26a4fa35b267f45676fe797403fd81"
 
       def install
         bin.install "congo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.2/congo_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "b76a2494aa36c8d73cee16fa8b4cfc2737748105aa934054399e51227d2532bf"
+      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.3/congo_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "20dc52b0036eb4550b85f32dd2d0e95acf0ca6cc29055ac601dca2faf72cfc84"
 
       def install
         bin.install "congo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.2/congo_0.1.2_Linux_arm64.tar.gz"
-      sha256 "ed06f7b7b499de96db05e853fbf46df9bbfb75b760bbdb392fd1f3dabbe9a01d"
+      url "https://github.com/PauSabatesC/congo/releases/download/v0.1.3/congo_0.1.3_Linux_arm64.tar.gz"
+      sha256 "4081438057d77f9c717600dec2f8f9a35e0750ad7a1ea6be010bf03ec924b7e4"
 
       def install
         bin.install "congo"
