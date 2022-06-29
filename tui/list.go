@@ -78,21 +78,19 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 	case tea.KeyMsg:
 		switch keypress := msg.String(); keypress {
+		//TODO: investigate a way to warn user that ctrl+c exits remote connection and congo
 		case "ctrl+c":
 			Exited = true
 			m.quitting = true
 			return m, tea.Quit
-
 		case "q":
 			Exited = true
 			m.quitting = true
 			return m, tea.Quit
-
 		case "esc":
 			Exited = true
 			m.quitting = true
 			return m, tea.Quit
-
 		case "enter":
 			i, ok := m.list.SelectedItem().(item)
 			if ok {
