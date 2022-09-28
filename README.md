@@ -11,23 +11,11 @@
 </p>
 
 <p align="center" >
-<img src="https://github.com/PauSabatesC/congo/blob/main/cli-example.png" alt="congo cli example" width="600"/>
-</p>
-
-<p align="center" >
 🚀 Filter to find faster your resources
 </p>
 
 <p align="center" >
-<img src="https://github.com/PauSabatesC/congo/blob/main/cli-filter-example.png" alt="congo cli filter" width="600"/>
-</p>
-
-<p align="center" >
-🚀 Perfect for small or big AWS accounts
-</p>
-
-<p align="center" >
-<img src="https://github.com/PauSabatesC/congo/blob/main/cli-filter-thousand-example.png" alt="congo cli thousand" width="600"/>
+🚀 Perfect for small or big AWS accounts to enforce SSM usage
 </p>
 
 <br>
@@ -39,6 +27,13 @@
   <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/PauSabatesC/congo">
 </p>
 
+<p align="center" >
+<img src="https://user-images.githubusercontent.com/29798175/192880783-8a0f9d74-0048-4807-8623-530321252bc9.gif" alt="congo cli filter" width="550"/>
+</p>
+
+<p align="center" >
+<img src="https://user-images.githubusercontent.com/29798175/192882723-7eed15e6-2b9d-493a-853b-2943e710b4eb.gif" alt="congo cli filter" width="550"/>
+</p>
 
 --- 
 
